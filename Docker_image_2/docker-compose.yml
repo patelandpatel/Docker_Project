@@ -1,0 +1,9 @@
+version: "3.0"
+services: 
+  web: 
+    image: name_of_image_flask_web_application
+    build: .
+    ports:
+      - "8000:5000"
+  redis:
+    image: redis
